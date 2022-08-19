@@ -1,7 +1,7 @@
-var audio = document.getElementById("my-audio");
+var audio = document.querySelector(".my-audio");
 audio.volume = 0.3;
 
-var button = document.querySelector("#btn-color");
+var button = document.querySelector(".btn-color");
 button.addEventListener("click", () => {
   alert("Wylosowaliśmy losowy kolor dla buttona");
   var random = Math.floor(Math.random() * 5 + 1);
