@@ -3,7 +3,6 @@ audio.volume = 0.3;
 
 var button = document.querySelector(".btn-color");
 button.addEventListener("click", () => {
-  alert("Wylosowaliśmy losowy kolor dla buttona");
   var random = Math.floor(Math.random() * 5 + 1);
   if (random == 1) button.style.backgroundColor = "forestgreen";
   else if (random == 2) button.style.backgroundColor = "tomato";

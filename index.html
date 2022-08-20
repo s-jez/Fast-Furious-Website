@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Fast-Furious Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast-Furious | First Project Website</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/icon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Fast-Furious Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fast and Furious</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/app.js" defer></script>
+    <script src="js/slider.js" defer></script>
+  </head>
+  <body>
     <nav class="nav-links">
-        <div class="website-name">Fast-Furious</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Gallery</a></li>
-            <li><a href="index.html">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+      <a class="website-name">The fast and Furious</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Films</a></li>
+        <li><a href="#">Actors</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
-    <div class="container">
-        <header>
-            <h1>Welcome to my first website!</h1>
-            <p class="article-text">I want to change the world. World can be better for people..</p>
-            <hr>
-        </header>
-        <section class="gallery">
-            <img class="gallery__img-1" src="https://64.media.tumblr.com/2caf1d44f06153286532cc508b5c074f/tumblr_nmxaft0SzP1uniezno8_500.gifv" alt="driving cars">
-            <img class="gallery__img-2" src="https://i.gifer.com/XsBi.gif" alt="fast and furious 7 paul walker smile">
-        </section>
-        <article>
-            <p class="article-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, at. Eos officiis reprehenderit quaerat aliquam, accusamus totam rerum a assumenda, hic at culpa delectus consequatur omnis et asperiores qui voluptas.</p>
-            <br />
-            <div class="my-music">
-                <p class="paragraph-text">Wiz Khalifa - See You Again ft. Charlie Puth</p>
-                <audio class="my-audio" controls loop>
-                    <source id="mySource" src="musics/music.mp3"
-                        type="audio/mp3">
-                </audio>
-            </div>
-        </article>
-        <button class="btn-color">Click me, to change color!</button>
-        <article class="contact-us">
-            <h2>Contact with us now!</h2>
-            <a href="https://formsubmit.co/el/fabulu" target="_blank" rel="noopener">Click here to complete the contact form!!</a>
-            </form>
-        </article>
-    </div>
+    <main class="container">
+      <header>
+        <h1>Welcome to my first website!</h1>
+        <p class="article-heading-text">
+          I want to change the world. World can be better for people..
+        </p>
+      </header>
+      <section class="gallery">
+        <img
+          class="gallery__img-1"
+          src="https://64.media.tumblr.com/2caf1d44f06153286532cc508b5c074f/tumblr_nmxaft0SzP1uniezno8_500.gifv"
+          alt="driving cars"
+        />
+      </section>
+      <article>
+        <h2>Films Informations</h2>
+        <p class="article-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, at.
+          Eos officiis reprehenderit quaerat aliquam, accusamus totam rerum a
+          assumenda, hic at culpa delectus consequatur omnis et asperiores qui
+          voluptas.
+        </p>
+        <div class="my-music">
+          <p class="article-heading-text">
+            Wiz Khalifa - See You Again ft. Charlie Puth
+          </p>
+          <audio class="my-audio" controls loop>
+            <source id="mySource" src="musics/music.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+      </article>
+      <button class="btn-color">Click me, to change color!</button>
+      <article class="actors">
+        <h3>All actors</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nulla
+          dolores eaque assumenda eum, culpa iure debitis ullam id corrupti
+          provident excepturi, adipisci sequi accusantium quos totam eius.
+          Delectus, explicabo.
+        </p>
+      </article>
+    </main>
     <footer>
-        <p>Wszelkie prawa do strony zastrzeżone 2020/2021 &copy;</p>
+      <p>
+        All rights to the pages are reserved The Fast and Furious &copy; 2022
+      </p>
     </footer>
-    <script src="js/app.js"></script>
-    <script src="js/slider.js"></script>
-</body>
+  </body>
 </html>

@@ -22,8 +22,14 @@ h1 {
   font-size: 28px;
 }
 h2 {
-  margin: 15px 0;
   font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+h2, h3 {
+  margin: 15px 0;
+  color: white;
 }
 
 /* Container */
@@ -63,17 +69,22 @@ nav a:hover {
 /* Nav-links */
 
 .nav-links-active li {
+  display: inline-block;
   opacity: 1;
-  display: inline;
   transform: translateX(0%);
 }
 .nav-links-active {
-  padding-bottom: 25px;
-  height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.5s ease-in;
+}
+.nav-links-active ul {
+  text-align: center;
+}
+.nav-links-active ul li{
+  display: inline-block;
+  text-align: center;
 }
 .nav-links {
   display: flex;
@@ -101,12 +112,24 @@ section {
   font-size: 14px;
   text-align: center;
 }
-.paragraph-text {
+.article-heading-text {
     color: white;
     font-size: 18px;
+    text-align: center;
 }
-hr {
-  border: 1px solid #7ab6fa;
+.article-text, .article-heading-text {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+/* Article */
+
+article {
+  padding: 20px 0;
+}
+article h2 {
+  text-align: center;
 }
 
 /* Gallery */
@@ -198,15 +221,15 @@ footer p {
   transition: transform 1s ease-in;
 }
 
-/* Contact Us */
+/* Actor Article */
 
-.contact-us {
+.actors {
   color: white;
   text-align: center;
   font-size: 15px;
   margin: 30px 0;
 }
-.contact-us a{
+.actors a{
   font-size: 16px;
   color: #7ab6fa;
   text-decoration: none;
@@ -223,14 +246,14 @@ footer p {
 }
 @media screen and (max-width: 768px) {
   .nav-links {
-    height: 120px;
+    height: 95px;
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease-in;
   }
   .nav-links li {
     display: none;
-    transform: translateX(100%);
+    text-align: center;
   }
   .burger {
     display: block;
