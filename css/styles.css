@@ -234,6 +234,24 @@ footer p {
   color: #7ab6fa;
   text-decoration: none;
 }
+.actors__grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.actors__grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height: 500px;
+}
+.actors__image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
 
 /* Media Query */
 
